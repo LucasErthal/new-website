@@ -14,8 +14,8 @@ export const ProfileContainer = styled.div`
   width: 50%;
   background-color: ${props => props.theme.colors.foreground};
   padding: 5% 7.5% 5% 7.5%;
-  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.40);
+  border-radius: 12px;
   font-size: 24px;
   font-weight: 400;
 `;
@@ -29,7 +29,7 @@ export const ProfileImage = styled.img`
   width: 200px;
   height: 200px;
   border-radius: 200px;
-  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.40);
 `;
 
 export const LandingImage = styled.img`

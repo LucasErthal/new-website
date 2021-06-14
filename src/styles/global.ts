@@ -7,7 +7,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 
-    transition-property: background-color;
+    transition-property: background-color, margin;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
   }
