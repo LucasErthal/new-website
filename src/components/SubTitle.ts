@@ -6,6 +6,10 @@ const SubTitle = styled(Title)`
   margin-bottom: 5%;
   align-self: flex-start;
   width: 100%;
+
+  @media(max-width: 1080px) {
+    font-size: 24px;
+  }
 `;
 
 export default SubTitle;

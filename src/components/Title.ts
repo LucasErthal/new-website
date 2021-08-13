@@ -10,6 +10,10 @@ const Title = styled.text`
   align-self: center;
   font-weight: 600;
   box-shadow: 0px 2px 0px 0px ${(props:TitleProps) => props.underlineColor};
+
+  @media(max-width: 1080px) {
+    font-size: 32px;
+  }
 `;
 
 export default Title;

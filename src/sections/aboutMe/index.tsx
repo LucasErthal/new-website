@@ -1,4 +1,3 @@
-import React from 'react';
 import * as Styled from './styles';
 import Title from '../../components/Title';
 import SubTitle from '../../components/SubTitle';
@@ -11,7 +10,7 @@ function AboutMe() {
   const theme = useContext(ThemeContext);
 
   return (
-    <Styled.Container>
+    <Styled.Container id="sobre" >
       <Title
         underlineColor={theme.colors.primary}
       >

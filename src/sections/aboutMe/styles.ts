@@ -7,8 +7,12 @@ interface ButtonProps {
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 5% 5% 5% 5%;
+  width: 100vw;
+  padding: 5% 10% 5% 10%;
+
+  @media(max-width: 1080px) {
+    padding: 5% 0;
+  }
 `;
 
 export const GridContainer = styled.div`
@@ -21,6 +25,12 @@ export const GridContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 5%;
   padding: 5% 0;
+
+  @media(max-width: 1080px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const SmallCard = styled.div`
@@ -34,6 +44,12 @@ const SmallCard = styled.div`
   border-radius: 12px;
   box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.40);
   justify-self: center;
+
+  @media(max-width: 1080px) {
+    width: 100%;
+    height: 250px;
+    margin-top: 5%;
+  }
 `;
 
 export const More = styled.div`
@@ -45,7 +61,6 @@ export const More = styled.div`
 export const TextContainer = styled.div`
   flex: 1;
   display: flex;
-  font-size: 24px;
   font-weight: 400;
   white-space: wrap;
   flex-direction: column;
@@ -74,13 +89,18 @@ export const ButtonsContainer = styled.div`
   height: 40%;
   align-items: center;
   justify-content: space-around;
+
+  @media(max-width: 1080px) {
+    width: 100%;
+    height: 50%;
+  }
 `;
 
 export const ButtonComponent = styled.a`
   display: flex;
   width: 45%;
   height: 100%;
-  background-color: ${(props:ButtonProps) => props.color};
+  background-color: ${(props: ButtonProps) => props.color};
   border-radius: 8px;
   border: none;
   margin-bottom: 0;
@@ -103,11 +123,14 @@ export const MoreContainer = styled.div`
   flex-direction: column;
   background-color: ${props => props.theme.colors.foreground};
   padding: 5% 5% 5% 5%;
-  width: 95.5%;
+  width: 100%;
   max-width: 1600px;
   border-radius: 12px;
   box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.40);
-  font-size: 24px;
   justify-self: center;
+
+  @media(max-width: 1080px) {
+    margin-top: 10%;
+  }
 `;
 

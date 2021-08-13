@@ -8,6 +8,8 @@ import light from './styles/themes/light';
 //#region Sections
 import Landing from './sections/Landing';
 import AboutMe from './sections/aboutMe';
+import Projects from './sections/Projects';
+import Courses from './sections/Courses';
 //#endregion Sections
 
 function App() {
@@ -18,14 +20,16 @@ function App() {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
+      <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Header toggleTheme={toggleTheme} />
+        <Header
+          toggleTheme={toggleTheme}
+        />
         <Landing />
         <AboutMe />
-      </div>
-    </ThemeProvider>
+        <Projects />
+        <Courses />
+      </ThemeProvider>
   );
 }
 

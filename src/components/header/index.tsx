@@ -14,19 +14,19 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <Styled.Container>
       <Styled.SectionsContainer>
-        <Styled.SectionButton>
+        <Styled.SectionButton to="inicio" smooth duration={700} >
           Início
         </Styled.SectionButton>
 
-        <Styled.SectionButton>
+        <Styled.SectionButton to="sobre" smooth duration={700} >
           Sobre Mim
         </Styled.SectionButton>
 
-        <Styled.SectionButton>
+        <Styled.SectionButton to="projetos" smooth duration={700} >
           Projetos
         </Styled.SectionButton>
 
-        <Styled.SectionButton>
+        <Styled.SectionButton to="cursos" smooth duration={700} >
           Cursos
         </Styled.SectionButton>
       </Styled.SectionsContainer>

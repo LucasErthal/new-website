@@ -26,9 +26,13 @@ export default createGlobalStyle`
   }
 
   body, input, button, textarea {
-    font: 60 18px  Nunito, sans-serif;
+    font: 60 22px  Nunito, sans-serif;
 
     outline-style: none;
+
+    @media(max-width: 1080px) {
+      font: 60 18px  Nunito, sans-serif;
+  }
   }
 
   @keyframes drop {
